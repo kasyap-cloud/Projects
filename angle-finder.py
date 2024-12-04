@@ -16,7 +16,7 @@ def getAngle(points):
     cv2.putText(img,str(ang),(b[0]-40,b[1]-20),cv2.FONT_HERSHEY_COMPLEX_SMALL,1,(0,255,0),2)
 
 
-def click_event(event,x,y,flags,params):
+def click_event(event,x,y):
     global points,img
     if event==cv2.EVENT_LBUTTONDOWN:
         if len(points)!=0 and len(points)%3!=0:
